@@ -78,7 +78,7 @@ test('it should take in "hello" and "world" and return NaN', function(expect) {
     // Set up your arguments and expectations
     const numberOne = 'hello';
     const numberTwo = 'world';
-    const expected = 'hello';
+    const expected = NaN;
 
     //Act 
     // Call the function you're testing and set the result to a const
