@@ -1,3 +1,5 @@
+import { add, subtract } from './mathUtils.js';
+
 const addButton = document.getElementById('sum-button');
 
 addButton.addEventListener('click', () => {
@@ -8,14 +10,14 @@ addButton.addEventListener('click', () => {
 
     console.log(input1.value);
     console.log(input2.value);
-    const firstValue = Number(input1.value);
-    const secondValue = Number(input2.value);
-    const sum = firstValue + secondValue;
+    const booger = Number(input1.value);
+    const puppy = Number(input2.value);
+    const sum = add(booger, puppy);
 
     console.log(sum);
     resultSpan.textContent = sum;
 
-})
+});
 const subButton = document.getElementById('sub-button');
 
 subButton.addEventListener('click', () => {
@@ -28,12 +30,12 @@ subButton.addEventListener('click', () => {
     console.log(input2.value);
     const firstValue = Number(input1.value);
     const secondValue = Number(input2.value);
-    const sub = firstValue - secondValue;
+    const sub = subtract(firstValue, secondValue);
 
     console.log(sub);
     resultSpan.textContent = sub;
 
-})
+});
 const multiButton = document.getElementById('multi-button');
 
 multiButton.addEventListener('click', () => {
@@ -51,7 +53,7 @@ multiButton.addEventListener('click', () => {
     console.log(multi);
     resultSpan.textContent = multi;
 
-})
+});
 const divButton = document.getElementById('div-button');
 
 divButton.addEventListener('click', () => {
@@ -69,4 +71,4 @@ divButton.addEventListener('click', () => {
     console.log(div);
     resultSpan.textContent = div;
 
-})
+});
