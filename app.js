@@ -10,9 +10,9 @@ addButton.addEventListener('click', () => {
 
     console.log(input1.value);
     console.log(input2.value);
-    const booger = Number(input1.value);
-    const puppy = Number(input2.value);
-    const sum = add(booger, puppy);
+    const firstNumber = Number(input1.value);
+    const secondNumber = Number(input2.value);
+    const sum = add(firstNumber, secondNumber);
 
     console.log(sum);
     resultSpan.textContent = sum;
