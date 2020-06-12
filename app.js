@@ -1,12 +1,12 @@
-import { add, subtract } from './mathUtils.js';
+import { addition, subtraction } from './math-Utils.js';
 
 const addButton = document.getElementById('sum-button');
 
 addButton.addEventListener('click', () => {
     // post-click logic goes here!
     const input1 = document.getElementById('add-one');
-    const input2 = document.getElementById('add-two');
-    const resultSpan = document.getElementById('sum-result');
+    const input2 = document.getElementById('addtwo');
+    const resultSpan = document.getElementById('sum-span');
 
     console.log(input1.value);
     console.log(input2.value);
@@ -24,13 +24,13 @@ subButton.addEventListener('click', () => {
     // post-click logic goes here!
     const input1 = document.getElementById('minus-one');
     const input2 = document.getElementById('minus-two');
-    const resultSpan = document.getElementById('sub-result');
+    const resultSpan = document.getElementById('sub');
 
     console.log(input1.value);
     console.log(input2.value);
     const firstValue = Number(input1.value);
     const secondValue = Number(input2.value);
-    const sub = subtract(firstValue, secondValue);
+    const sub = subtract(secondValue, firstValue);
 
     console.log(sub);
     resultSpan.textContent = sub;
@@ -58,15 +58,15 @@ const divButton = document.getElementById('div-button');
 
 divButton.addEventListener('click', () => {
     // post-click logic goes here!
-    const input1 = document.getElementById('div-one');
-    const input2 = document.getElementById('div-two');
+    const input1 = document.getElementById('one');
+    const input2 = document.getElementById('two');
     const resultSpan = document.getElementById('div-result');
 
     console.log(input1.value);
     console.log(input2.value);
     const firstValue = Number(input1.value);
     const secondValue = Number(input2.value);
-    const div = firstValue / secondValue;
+    const div = secondValue / firstValue;
 
     console.log(div);
     resultSpan.textContent = div;
