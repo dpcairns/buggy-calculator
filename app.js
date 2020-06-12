@@ -28,8 +28,8 @@ subButton.addEventListener('click', () => {
 
     console.log(input1.value);
     console.log(input2.value);
-    const firstValue = Number(input1.value);
-    const secondValue = Number(input2.value);
+    const firstValue = Number(input1);
+    const secondValue = Number(input2);
     const sub = subtract(secondValue, firstValue);
 
     console.log(sub);
@@ -46,8 +46,8 @@ multiButton.addEventListener('click', () => {
 
     console.log(input1.value);
     console.log(input2.value);
-    const firstValue = Number(input1.value);
-    const secondValue = Number(input2.value);
+    const firstValue = Number(input1.number);
+    const secondValue = Number(input2.number);
     const multi = firstValue * secondValue;
 
     console.log(multi);
