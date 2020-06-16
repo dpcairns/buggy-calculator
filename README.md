@@ -1,4 +1,6 @@
-# lab-03b-calculator
+# calculator
+
+### Note: these bugs weren't in the original student submission. I introduced these bugs for this assignment.
 
 ## Debugging starting points
 
@@ -19,8 +21,7 @@
 
 `Cannot read property 'type' of undefined (app.js:34)`
 `
-![](./error.png)
-
+ 
 1) Go look for `.type` on line 34 in app.js
 2) Look to the left of `.type`
 3) Figure out why the thing to the left of `.type` is undefined
